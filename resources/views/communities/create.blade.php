@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('New Community') }}</div>
+                <div class="card-header">
+                    {{ __('New Community') }}
+                    <a class="btn btn-outline-dark btn-sm d-inline-block float-end" href="{{route('communities.index')}}">Dashboard</a>
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('communities.store') }}">
